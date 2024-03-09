@@ -1,0 +1,13 @@
+services:
+  go-echo-with-air:
+    build:
+      context: ./docker/go
+    container_name: go-echo-with-air
+    tty: true
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/home/go-echo-with-air
+      - ./storage/go/pkg:/go/pkg
+    working_dir: /home/go-echo-with-air
+    command: air -c .air.toml

@@ -1,0 +1,3 @@
+/storage/go/pkg/*
+!/storage/go/pkg/.gitkeep
+/tmp
