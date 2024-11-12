@@ -16,7 +16,7 @@
   docker compose build
   
   # 必要なものをインストール
-  docker run --rm -v $(pwd):/home/go-echo-with-air -v $(pwd)/storage/go/pkg:/go/pkg --workdir /home/go-echo-with-air  golang:1.22.1-alpine3.19  go mod tidy
+  docker compose run --rm -v $(pwd):/home/go-echo-with-air -v $(pwd)/storage/go/pkg:/go/pkg --workdir /home/go-echo-with-air  go-echo-with-air  go mod tidy
 
   # コンテナを起動
   docker compose up

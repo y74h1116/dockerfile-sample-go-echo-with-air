@@ -1,6 +1,6 @@
 module go-echo-with-air
 
-go 1.22.1
+go 1.23.3
 
 require github.com/labstack/echo/v4 v4.11.4
 
